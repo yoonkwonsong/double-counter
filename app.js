@@ -10,6 +10,17 @@ firstBtns.forEach((btn) =>
         e.target.textContent == "increase" && firstCounter++
 
         document.querySelector(".top > h3").textContent = firstCounter
-        console.log(firstCounter)
+    })
+)
+
+const secondBtns = document.querySelectorAll(".bot > .btn-con > .btn")
+
+secondBtns.forEach((btn) =>
+    btn.addEventListener("click", (e) => {
+        e.target.textContent == "decrease" && secondCounter--
+        e.target.textContent == "reset" && (secondCounter = 0)
+        e.target.textContent == "increase" && secondCounter++
+
+        document.querySelector(".bot > h3").textContent = secondCounter
     })
 )
