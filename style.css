@@ -1,0 +1,63 @@
+:root {
+    --main-color: rgb(70, 70, 70);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.card {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35rem;
+    height: 15rem;
+    background-color: white;
+    padding: 20px;
+}
+
+.card > h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: var(--main-color);
+}
+
+.card > h3 {
+    font-size: 90px;
+    margin: 20px;
+    color: var(--main-color);
+}
+
+.card > .btn-con {
+    display: flex;
+}
+
+.card > .btn-con > .btn {
+    background-color: transparent;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    border: 1px solid var(--main-color);
+    font-weight: 700;
+    color: var(--main-color);
+    cursor: pointer;
+    width: 120px;
+}
+
+.card > .btn-con > .btn:hover {
+    background-color: var(--main-color);
+    color: white;
+}
